@@ -1,4 +1,6 @@
 # Goodfood
+受 [g0v.tw](http://g0v.tw) 啟發，以「吃當季、吃在地、建立農人與消費者的連結」為出發的計畫。  
+借[台灣好食協會](http://www.taiwangoodfood.org.tw/fishmap01.php)的資料，包裝成[好食API](http://goodfood.cades.tw)。
 
 ## Usage
 這個專案用 caveman (common lisp 的 web framework) 寫成, 資料庫使用 mongodb.  
