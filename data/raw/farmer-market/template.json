@@ -1,0 +1,9 @@
+{
+    'name' : '',
+    'city' : '',
+    'address' : '',
+    'address-alt' : '', // 地點別稱
+    'time' : '',
+    'website' : ''
+}
+

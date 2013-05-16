@@ -1,0 +1,19 @@
+{
+    "name"  : "驚蟄",
+    "begin" : "03-05",
+    "end"   : "03-07",
+    "food" : 
+    {
+        "vegetables" : ["枇杷", "草莓", "洋香瓜", "柳丁", "番茄", "洋蔥"],
+        "fruits"     : ["牛蒡", "萵苣", "豌豆苗", "茼蒿", "胡蘿蔔", "山藥", "韭", "孟宗筍", "甘藷", "蕗蕎", "芥菜", "蘆筍"],
+        "fish"       : ["石蚵", "鰹魚", "紅目鰱", "嘉鱲", "鯛魚", "鯧魚"]
+    },
+    "wallpaper" :
+    {
+	"1024x768"  : "http://blog.taiwangoodfood.org/img/file/file_r1fyt1srq7.jpg",
+	"1080x800"  : "http://blog.taiwangoodfood.org/img/file/file_pvciwiv9wu.jpg",
+	"1366x768"  : "http://blog.taiwangoodfood.org/img/file/file_lty8tgbmml.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_u97g7y5pm6.jpg"
+    }
+
+}

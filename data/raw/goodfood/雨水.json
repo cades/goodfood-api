@@ -1,0 +1,18 @@
+{
+    "name" : "雨水",
+    "begin" : "02-19",
+    "end" : "02-20",
+    "food" :
+    {
+	"vegetables" : ["蔥", "豌豆苗", "胡蘿蔔", "孟宗筍", "山藥", "萵苣", "甘藷", "茼蒿", "芥菜", "洋蔥"],
+	"fruits" : ["枇杷", "柳丁", "蓮霧", "番茄", "洋香瓜", "草莓", "柑橘"],
+	"fish" : ["烏魚", "鯛魚", "紅目鰱", "鯖魚", "鯧魚", "白帶魚", "嘉鱲"]
+    },
+    "wallpaper" :
+    {
+	"1024x768" : "http://blog.taiwangoodfood.org/img/file/file_j7b78hs94b.jpg",
+	"1080x800" : "http://blog.taiwangoodfood.org/img/file/file_h883m4p76v.jpg",
+	"1366x768" : "http://blog.taiwangoodfood.org/img/file/file_dlthg13ddr.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_n33zz3tgnm.jpg"
+    }
+}

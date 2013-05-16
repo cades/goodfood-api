@@ -1,0 +1,19 @@
+{
+    "name" : "清明",
+    "begin" : "04-04",
+    "end" : "04-06",
+    "food" : 
+    {
+        "vegetables" : ["豌豆", "蘆筍", "洋蔥", "胡蘿蔔", "麥蔥", "甘藷", "牛蒡", "莧菜", "孟宗筍", "蕗蕎"],
+        "fruits" : ["西瓜", "洋香瓜", "香蕉", "梅子", "桑椹", "番茄", "土芒果", "鳳梨", "枇杷"],
+        "fish" : ["鰹魚", "紅目鰱", "飛魚", "嘉鱲", "櫻花蝦"]
+    },
+    "wallpaper" :
+    {
+	"1024x768" : "http://blog.taiwangoodfood.org/img/file/file_a7dbfbzse1.jpg",
+	"1080x800" : "http://blog.taiwangoodfood.org/img/file/file_i6e2ycv61h.jpg",
+	"1366x768" : "http://blog.taiwangoodfood.org/img/file/file_zrdnv1muwr.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_liu3svdxxz.jpg"
+    }
+
+}

@@ -1,0 +1,18 @@
+{
+    "name"  : "立春",
+    "begin" : "02-02",
+    "end"   : "02-05",
+    "food" : 
+    {
+        "vegetables" : ["蔥", "芥菜", "豌豆苗", "孟宗筍", "白蘿蔔", "甘藷", "胡蘿蔔", "山藥", "萵苣", "洋蔥"],
+        "fruits"     : ["柳丁", "蓮霧", "柑橘", "棗", "洋香瓜", "釋迦", "番茄", "草莓"],
+        "fish"       : ["白帶魚", "鯛魚", "紅目鰱", "紅魽", "鯖魚", "烏魚", "鯧魚", "嘉鱲"]
+    },
+    "wallpaper" :
+    {
+	"1024x768"  : "http://blog.taiwangoodfood.org/img/file/file_wtvbq3pz7o.jpg",
+	"1080x800"  : "http://blog.taiwangoodfood.org/img/file/file_k0c87modnj.jpg",
+	"1366x768"  : "http://blog.taiwangoodfood.org/img/file/file_w3wtvwumh5.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_x5abs5hgbb.jpg"
+    }
+}

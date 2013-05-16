@@ -1,0 +1,18 @@
+{
+    "name"  : "大雪",
+    "begin" : "12-06",
+    "end"   : "12-08",
+    "food" : 
+    {
+        "vegetables" : ["紅甘蔗", "花椰菜", "萵苣", "甘藷", "芋頭", "芥菜", "胡蘿蔔", "洛神", "豌豆", "花生", "山藥", "番茄"],
+        "fruits"     : ["柑橘", "蓮霧", "洋香瓜", "葡萄", "釋迦", "柳丁", "草莓", "楊桃"],
+        "fish"       : ["鰭魚", "旗魚", "鯧魚", "紅魽", "嘉鱲", "鯛魚", "櫻花蝦", "烏魚"]
+    },
+    "wallpaper" :
+    {
+	"1024x768"  : "http://localhost:5000/wallpaper/1024x768/04-20",
+	"1080x800"  : "http://blog.taiwangoodfood.org/img/file/file_dtmylffya6.jpg",
+	"1366x768"  : "http://blog.taiwangoodfood.org/img/file/file_fpcm1dlgaw.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_chhmx35853.jpg"
+    }
+}

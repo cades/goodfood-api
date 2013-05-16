@@ -1,0 +1,52 @@
+[
+    {
+	'name' : '彎腰農夫市集',
+	'city' : '台北',
+	'address' : '台北市大安區金華街 187 號',
+	'address-alt' : '政大公企中心',
+	'time' : '每月一次, 日期請見網站 10:00~17:00',
+	'website' : 'http://www.facebook.com/l.php?u=http%3A%2F%2Fbowtoland.blogspot.com%2F&h=ZAQF1gtZz&s=1'
+    },
+    {
+	'name' : '248農學市集',
+	'city' : '台北',
+	'address' : '忠孝東路4段248巷內',
+	'address-alt' : '',
+	'time' : '週五14:00~20:00 週六10:00~17:00',
+	'website' : 'http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.248.com.tw%2F&h=yAQGMmh4i&s=1'
+    },
+    {
+	'name' : '',
+	'city' : '',
+	'address' : '',
+	'address-alt' : '',
+	'time' : '',
+	'website' : ''
+    },
+    {
+	'name' : '',
+	'city' : '',
+	'address' : '',
+	'address-alt' : '',
+	'time' : '',
+	'website' : ''
+    },
+    {
+	'name' : '',
+	'city' : '',
+	'address' : '',
+	'address-alt' : '',
+	'time' : '',
+	'website' : ''
+    },
+    {
+	'name' : '',
+	'city' : '',
+	'address' : '',
+	'address-alt' : '',
+	'time' : '',
+	'website' : ''
+    }
+
+
+]

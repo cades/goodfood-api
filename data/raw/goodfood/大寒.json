@@ -1,0 +1,18 @@
+{
+    "name"  : "大寒",
+    "begin" : "01-19",
+    "end"   : "01-21",
+    "food" : 
+    {
+        "vegetables" : ["洛神", "萵苣", "黃豆", "洋蔥", "芋頭", "山藥", "甘藷", "胡蘿蔔", "花椰菜", "茄ˊ子"],
+        "fruits"     : ["草莓", "棗", "洋香瓜", "番茄", "柑橘", "蓮霧", "釋迦", "柳丁"],
+        "fish"       : ["鯧魚", "烏魚", "嘉鱲", "鯛魚", "旗魚", "紅魽"]
+    },
+    "wallpaper" :
+    {
+	"1024x768"  : "http://blog.taiwangoodfood.org/img/file/file_z1n5qv86pq.jpg",
+	"1080x800"  : "http://blog.taiwangoodfood.org/img/file/file_idlhoius1c.jpg",
+	"1366x768"  : "http://blog.taiwangoodfood.org/img/file/file_gb6upmr8w9.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_wej2jtyy34.jpg"
+    }
+}

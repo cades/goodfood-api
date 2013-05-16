@@ -1,0 +1,18 @@
+{
+    "name"  : "立夏",
+    "begin" : "05-05",
+    "end"   : "05-05",
+    "food" : 
+    {
+        "vegetables" : ["空心菜", "蕗蕎", "甘藷", "越瓜", "綠竹筍", "瓠瓜", "筊白筍", "秋葵", "蘆筍"],
+        "fruits"     : ["桃", "鳳梨", "西瓜", "愛文芒果", "土芒果", "荔枝", "洋香瓜", "桑椹", "香蕉"],
+        "fish"       : ["白帶魚", "飛魚", "櫻花蝦"]
+    },
+    "wallpaper" :
+    {
+	"1024x768"  : "http://blog.taiwangoodfood.org/img/file/file_yb0qwb728k.jpg",
+	"1080x800"  : "http://blog.taiwangoodfood.org/img/file/file_sqxdww1fsr.jpg",
+	"1366x768"  : "http://blog.taiwangoodfood.org/img/file/file_y23udt3lvz.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_ohamrsdmvq.jpg"
+    }
+}

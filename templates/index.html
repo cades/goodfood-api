@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>好食 API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      //padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+
+    /* STICKY FOOTER
+    -------------------------------------------------- */
+ /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        margin-top: 60px;
+        background-color: #f5f5f5;
+      }
+
+      .fork-me-on-github {
+	z-index: 200;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!--<a class="brand" href="#">好食 API</a>-->
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#food-of-season-api">當季食材 API</a></li>
+                <li><a href="#wallpaper-api">桌布 API</a></li>
+                <li><a href="#credits">Credits</a></li>
+                <li><a href="mailto:endlessfighting0327@gmail.com">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/static/img/examples/fruit-blur.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>二十四節氣的蔬果漁產</h1>
+              <p class="lead">吃當季。珍惜老天爺賜給我們的豐富資源。<br>順應宇宙的節奏，品嚐此「時」的生命滋味。</p>
+              <a class="btn btn-large btn-primary" href="https://zh.wikipedia.org/wiki/节气">了解二十四節氣</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/static/img/examples/taiwan-goodfood-blur.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>「台灣好食曆」桌布</h1>
+              <p class="lead">來自種籽設計。從桌布認識當季食材。</p>
+              <a class="btn btn-large btn-primary" href="http://blog.taiwangoodfood.org.tw/content.php?type=1&class=活動訊息&id=104">前往台灣好食blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/static/img/examples/g0v-blur.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Open Data</h1>
+              <p class="lead">好食 API 提供易讀的 URL 與 json 格式的資料。<br>原始資料亦全部公開。</p>
+              <a class="btn btn-large btn-primary" href="http://g0v.tw">認識零時政府</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>當季食材 API</h2>
+          <p>以日期尋找最接近的節氣及食材。看看今天的食材： <a href="http://goodfood.cades.tw/food-of-season/today">http://goodfood.cades.tw/food-of-season/today </a></p>
+          <p><a class="btn" href="#food-of-season-api">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>好食曆桌布 API</h2>
+          <p>以尺寸和日期尋找桌布。 <a href="http://goodfood.cades.tw/wallpaper/1024x768/04-19">http://goodfood.cades.tw/wallpaper/1024x768/04-19</a></p>
+          <p><a class="btn" href="#wallpaper-api">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>[待辦]在地小農 API</h2>
+          <p>吃在地，幫助友善土地耕作的農人，降低食物里程。我們需要在地小農的資訊，如果您想提供協助，請<a href="#">聯絡我們</a>。</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+      <!-- START THE API DOCUMENT -->
+      
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="food-of-season-api">
+        <h2 class="featurette-heading">當季食材 API <span class="muted"></span></h2>
+        <p>二十四節氣以陽曆計算，約兩週交換一次，為期2-3天，同一個節氣在每年的月份與日期是固定不變的。</p>
+        <p>給定一個日期，系統會找到最接近這天的節氣資料。日期格式為<code>mm-dd</code>。</p>
+        <p>例如找4月21號的當季食材，</p>
+        <p><code>http://goodfood.cades.tw/food-of-season/04-21</code></p>
+        <p>會得到回傳資料</p>
+        <p><pre><code>
+{
+  "name" : "榖雨",
+  "begin" : "4-19",
+  "end" : "4-21",
+  "food" :
+  {
+    "vegetables" : ["茼蒿","蘑菇","越瓜","蕗蕎","茶","蘆筍","豌豆","胡蘿蔔","牛蒡","甘藷","麥蔥","洋蔥"],
+    "fruits" : ["桑椹","鳳梨","香蕉","枇杷","梅子","洋香瓜","土芒果","番茄","西瓜"],
+    "fish" : ["鰹魚","櫻花蝦","紅目鰱","嘉鱲","飛魚"]
+  }
+}
+        </code></pre></p>
+        <p>如果要找當天的資料，也可以這樣寫：</p>
+        <p><code>http://goodfood.cades.tw/food-of-season/today</code></p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="wallpaper-api">
+        <h2 class="featurette-heading">桌布 API <span class="muted"></span></h2>
+        <p>給定尺寸和日期，該url會重導向<a href="http://blog.taiwangoodfood.org.tw/content.php?type=1&class=活動訊息&id=104">台灣好食部落格</a>的圖片連結。</p>
+        <p>有效的尺寸有四種：<code>1024x768</code>, <code>1080x800</code>, <code>1366x768</code>, 以及<code>1920x1080</code>; 日期格式同當季食材API。</p>
+        <p>尺寸為1024x768, 離4月21號最接近的節氣的桌布連結：</p>
+        <p><code>http://goodfood.cades.tw/wallpaper/1024x768/04-21</code></p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- END THE API DOCUMENT -->
+      
+      <!-- START THE FEATURETTES -->
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <div id="footer">
+          <div class="container" id="credits">
+            <p class="pull-left">banner照片由<a href="http://smallfarmers2011.blogspot.tw">小龍</a>、<a href="http://blog.taiwangoodfood.org.tw">台灣好食</a>、<a href="http://www.flickr.com/photos/tkirby/collections/72157632969946032/">kirby wu</a>提供。好食曆桌布來自<a href="http://www.seedesign.com.tw">種籽設計。</a></p>
+            <p class="pull-right"> &copy; 2013 by cades</p>
+          </div>
+          <div>
+            <p class="pull-right"><a href="#">Back to top </a></p> 
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+    <a href="https://github.com/you"><img class="fork-me-on-github" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap-transition.js"></script>
+    <script src="/static/js/bootstrap-alert.js"></script>
+    <script src="/static/js/bootstrap-modal.js"></script>
+    <script src="/static/js/bootstrap-dropdown.js"></script>
+    <script src="/static/js/bootstrap-scrollspy.js"></script>
+    <script src="/static/js/bootstrap-tab.js"></script>
+    <script src="/static/js/bootstrap-tooltip.js"></script>
+    <script src="/static/js/bootstrap-popover.js"></script>
+    <script src="/static/js/bootstrap-button.js"></script>
+    <script src="/static/js/bootstrap-collapse.js"></script>
+    <script src="/static/js/bootstrap-carousel.js"></script>
+    <script src="/static/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="/static/js/holder/holder.js"></script>
+  </body>
+</html>

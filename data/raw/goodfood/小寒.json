@@ -1,0 +1,18 @@
+{
+    "name"  : "小寒",
+    "begin" : "01-05",
+    "end"   : "01-07",
+    "food" : 
+    {
+        "vegetables" : ["洛神", "胡蘿蔔", "甘藷", "茄子", "萵苣", "花椰菜", "豌豆苗", "花生", "芋頭", "番茄"],
+        "fruits"     : ["草莓", "柑橘", "棗", "柳丁", "洋香瓜", "蓮霧"],
+        "fish"       : ["鯧魚", "鯛魚", "烏魚", "旗魚", "嘉鱲", "紅魽"]
+    },
+    "wallpaper" :
+    {
+	"1024x768"  : "http://blog.taiwangoodfood.org/img/file/file_k91dt9mqsv.jpg",
+	"1080x800"  : "http://blog.taiwangoodfood.org/img/file/file_lwzby8r5le.jpg",
+	"1366x768"  : "http://blog.taiwangoodfood.org/img/file/file_jt0bs1ciq7.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_g18jtvtxqs.jpg"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name"  : "榖雨",
+    "begin" : "4-19",
+    "end"   : "4-21",
+    "food" : 
+    {
+        "vegetables" : ["茼蒿", "蘑菇", "越瓜", "蕗蕎", "茶", "蘆筍", "豌豆", "胡蘿蔔", "牛蒡", "甘藷", "麥蔥", "洋蔥"],
+        "fruits"     : ["桑椹", "鳳梨", "香蕉", "枇杷", "梅子", "洋香瓜", "土芒果", "番茄", "西瓜"],
+        "fish"       : ["鰹魚", "櫻花蝦", "紅目鰱", "嘉鱲", "飛魚"]
+    },
+    "wallpaper" :
+    {
+	"1024x768"  : "http://blog.taiwangoodfood.org/img/file/file_nj04bvdx13.jpg",
+	"1080x800"  : "http://blog.taiwangoodfood.org/img/file/file_krqdsttbaj.jpg",
+	"1366x768"  : "http://blog.taiwangoodfood.org/img/file/file_jozbfmpkee.jpg",
+	"1920x1080" : "http://blog.taiwangoodfood.org/img/file/file_fto7e9m2pi.jpg"
+    }
+
+}
